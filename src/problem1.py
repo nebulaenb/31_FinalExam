@@ -20,7 +20,7 @@ def main():
     print('Un-comment the calls in MAIN one by one')
     print(' to run the testing code as you complete the TODOs.')
     run_test_problem1a()
-    # run_test_problem1b()
+    run_test_problem1b()
 
 
 def run_test_problem1a():
@@ -94,9 +94,9 @@ def problem1a(numbers):
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
     sum = 0
-    sum += numbers[0]
-    sum += numbers[len(numbers) // 2]
-    sum += numbers[len(numbers) - 1]
+    sum += numbers[0]   # Add the first number
+    sum += numbers[len(numbers) // 2]   # Add the number in the middle
+    sum += numbers[len(numbers) - 1]    # Add the last number
 
     return sum
 
@@ -172,9 +172,16 @@ def problem1b(numbers):
       :type numbers:  [int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    sum = 0
+    index = len(numbers) // 3
+    for k in range(len(numbers) // 3):
+        sum += numbers[index]
+        index += 1
+
+    return sum
 
 
 ###############################################################################
