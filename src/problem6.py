@@ -93,8 +93,10 @@ And this one for n=14:
             print(' ',end='')
         for j in range(k + 1):
             print((j + 1) % 10, end='')
+        print(" ", end='')
         for m in range(n_of_stars):
             print('*', end='')
+        print(" ", end='')
         n_of_stars += 1
         for l in range(n - k):
             print((n - k - l) % 10, end='')
